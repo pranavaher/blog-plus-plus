@@ -14,8 +14,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <%# <body 
+  class="d-flex flex-column"
+  style="height: 100%;
+  > %>
+    <%= render "layouts/navigation" %>    
     <%= render "layouts/messages" %>    
     <%= yield %>
-  </body>
+  <%# </body> %>
 </html>
