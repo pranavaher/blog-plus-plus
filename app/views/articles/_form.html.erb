@@ -1,15 +1,7 @@
 <div class="container">
-  <% if @article.errors.any? %>
-    <h2>Article has not been saved. The following errors occured.</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
-
   <div class = "row justify-content-center"> 
     <div class="col-10">
+      <%= render "utilities/errors"%>
       <%= form_with(model: @article, class: "shadow mb-3 p-3 bg-success rounded", local: true, data: { turbo: false }) do |f| %>
         <div class="row mb-4">
           <%= f.label :title, class: "col-sm-2 col-form-label text-light" %>
