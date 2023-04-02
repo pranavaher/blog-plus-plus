@@ -1,27 +1,22 @@
-<div
-  <%# class="d-flex flex-column" %>
-  <%# style="background-color: #D3D3D3; %>
->
-  <div class="container">
-    <div>
-      <div class="jumbotron text-center mt-3">
-        <h1 class="display-4">Welcome to Blog++</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a>
-        </p>
-      </div>
-      <%= link_to "View Articles", articles_path %> |
-      <%= link_to "About", about_path %> 
-    </div>  
-  </div>
+<div class="container">
+  <div>
+    <div class="jumbotron text-center mt-3">
+      <h1 class="display-4">Welcome to Blog++</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="#" role="button">Sign up!</a>
+      </p>
+    </div>
+    <%= link_to "View Articles", articles_path %> |
+    <%= link_to "About", about_path %> 
+  </div>  
 </div>
 
 
-  <%# <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy; Your Website</small>
-    </div>
-  </footer> %>
+<footer class="fixed-bottom flex-shrink-0 py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>Copyright &copy; Your Website</small>
+  </div>
+</footer>
