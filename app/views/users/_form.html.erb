@@ -1,0 +1,34 @@
+<div class="container">
+  <div class = "row justify-content-center"> 
+    <div class="col-10">
+      <%= render "utilities/errors", obj:@user%>
+      <%= form_with(model: @user, class: "shadow mb-3 p-3 bg-success rounded", local: true, data: { turbo: false }) do |f| %>
+        <div class="row mb-4">
+          <%= f.label :username, class: "col-sm-2 col-form-label text-light" %>
+          <div class="col-sm-10">
+            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+          </div>
+        </div>
+        
+        <div class="row mb-4">
+          <%= f.label :email, class: "col-sm-2 col-form-label text-light" %>
+          <div class="col-sm-10">
+            <%= f.email_field :Email, class: "form-control shadow rounded", placeholder: "Enter your email" %>
+          </div>
+        </div>
+        
+        <div class="row mb-4">
+          <%= f.label :password, class: "col-sm-2 col-form-label text-light" %>
+          <div class="col-sm-10">
+            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Enter your Password" %>
+          </div>
+        </div>
+
+        <div class="form-group row mb-4 d-grid gap-2 col-2 mx-auto">
+          <%= f.submit class: "btn btn-outline-dark btn-lg" %> 
+        </div>
+      <% end %>
+    </div>
+    <%= link_to "[ Cancel & Back to Articles ]", articles_path, class: " text-decoration-none text-success" %>
+  </div>
+</div>
