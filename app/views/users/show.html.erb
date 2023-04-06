@@ -8,6 +8,10 @@
 
 <h3 class = "text-center mt-4">Your articles</h3>
 
+<div class = "d-flex justify-content-center mt-4 fs-5"> 
+  <%= will_paginate @articles %>
+</div>
+
 <%= 
   a = 5
   if a == 5
@@ -15,3 +19,6 @@
   end    
 %>
 
+<div class = "d-flex justify-content-center mt-1 mb-3 fs-5"> 
+  <%= will_paginate @articles %>
+</div>

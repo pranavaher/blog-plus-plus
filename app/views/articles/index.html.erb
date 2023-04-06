@@ -1,4 +1,11 @@
 <h1 class = "text-center mt-4">Listing All Articles </h1>
 
-<%= render 'articles' %>%
+<div class = "d-flex justify-content-center mt-4 fs-5"> 
+  <%= will_paginate @articles %>
+</div>
 
+<%= render 'articles' %>
+
+<div class = "d-flex justify-content-center mt-1 mb-3 fs-5"> 
+  <%= will_paginate @articles %>
+</div>
