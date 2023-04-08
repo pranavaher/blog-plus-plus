@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
   end 
   
   def index
-    @articles = Article.paginate(page: params[:page], per_page: 3)
+    @articles = Article.paginate(page: params[:page], per_page: 15)
   end 
 
   def new
