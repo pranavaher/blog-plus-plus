@@ -1,24 +1,16 @@
-# README
+# Blog++
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+This is repo of blog application developed using ruby on rails. 
+* User can create, read, update, delete articles and own profile.
+* Admin can read and delete users. 
+* Implemented authentication and authorization. 
+* Articles are classified among different categories meaning each article can fit in multiple category.
+* One to Many and Many to Many associations are implemented.
 
-Things you may want to cover:
 
-* Ruby version
+## Tech Stack
+* Ruby on Rails
+* Bootstrap 5.2.x
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
